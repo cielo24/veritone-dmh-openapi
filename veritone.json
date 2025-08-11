@@ -5,6 +5,18 @@
     "title": "Veritone DMH API"
   },
   "basePath": "/assets-api",
+  "securityDefinitions": {
+    "ApiKeyQuery": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "query"
+    }
+  },
+  "security": [
+    {
+      "ApiKeyQuery": []
+    }
+  ],
   "tags": [
     {
       "name": "Clip"
